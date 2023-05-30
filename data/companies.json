@@ -1,0 +1,40 @@
+{
+    "companies": [
+        {
+            "name": "Company 1",
+            "contacts": [
+                {
+                    "name": "Contact 1",
+                    "email": "contact1@example.com",
+                    "positions": [
+                        {
+                            "position_name": "Position 1",
+                            "url": "http://example.com/position1",
+                            "application_status": "sent"
+                        },
+                        {
+                            "position_name": "Position 2",
+                            "url": "http://example.com/position2",
+                            "application_status": "not sent"
+                        }
+                    ]
+                },
+                {
+                    "name": "Contact 2",
+                    "email": "contact2@example.com",
+                    "positions": [
+                        {
+                            "position_name": "Position 3",
+                            "url": "http://example.com/position3",
+                            "application_status": "not sent"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Company 2",
+            ...
+        }
+    ]
+}
