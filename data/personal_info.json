@@ -1,0 +1,51 @@
+{
+    "personal_info": {
+      "name": "Nachname",
+      "first_name": "Vorname",
+      "born": "5. September 1900 im Kükennest",
+      "nationality": "Deutsch",
+      "address": "Straße",
+      "city": "Stadt",
+      "zip_code": "PLZ",
+      "phone": "Telefonnummer",
+      "email": "Email"
+    },
+    "education": [
+      {
+        "time": "03.2002-03.2008",
+        "university": "Fachhochschule",
+        "degree": "Dipl.",
+        "city": "Stadt",
+        "details": {
+          "course": "Studiengang",
+          "final_grade": "Abschlussnote",
+          "thesis_title": "Titel der Diplomarbeit",
+          "thesis_topics": "Themen der Diplomarbeit",
+          "used_technologies": "Verwendete Technologien"
+        }
+      },
+      // Weitere Bildungseinträge...
+    ],
+    "work_experience": [
+      {
+        "time": "08.2004-02.2005",
+        "company": "Technologies",
+        "city": "Stadt",
+        "details": {
+          "first_practical_semester": "Erstes Praxissemester",
+          "other_details": "...",
+          "used_technologies": "Verwendete Technologien"
+        }
+      },
+      // Weitere Berufserfahrungseinträge...
+    ],
+    "it_skills": {
+      "operating_systems": "Windows, Linux",
+      "office_skills": "PowerPoint, LaTeX",
+      "other_skills": "..."
+    },
+    "languages": {
+      "english": "Verhandlungssicher",
+      "other_languages": "..."
+    }
+  }  
