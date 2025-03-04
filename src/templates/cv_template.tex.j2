@@ -1,0 +1,56 @@
+\titel{\emph{Lebenslauf}}
+
+\section{Persönliche Daten}
+\eintragK{Name}										{{ personal_info.name }}
+\eintragK{Vorname}								{{ personal_info.first_name }}
+\eintragK{Geboren}						{{ personal_info.born }}
+\eintragK{Nationalität}						{{ personal_info.nationality }}
+\eintragK{Anschrift}							{{ personal_info.address }}
+\eintragK{}												{{ personal_info.zip_code }} \ {{ personal_info.city }}
+\eintragK{Telefon}								{{ personal_info.phone }}
+\eintragK{Email}									{{ personal_info.email }}
+
+\section{Hochschulstudium}
+{% for education in education %}
+\eintragL{{ education.time }} { {{ education.university }} } { {{ education.degree }} } { {{ education.city }} } {%
+	\begin{itemize}%
+	\item Studiengang: {{ education.details.course }}
+	\item Abschluss: {{ education.details.final_grade }}
+	\item Diplomarbeit:
+		\begin{itemize}
+		\item \glqq {{ education.details.thesis_title }} \grqq 
+		\item Themenbereich: {{ education.details.thesis_topics }}
+		\item verwendete Technologien: {{ education.details.used_technologies }}
+	\end{itemize}
+	\end{itemize}
+}
+{% endfor %}
+
+\section{Berufliche Tätigkeiten}
+{% for work in work_experience %}
+\eintragL{{ work.time }} { {{ work.company }} } { } { {{ work.city }} } {%
+	\begin{itemize}
+	\item Erstes Praxissemester: {{ work.details.first_practical_semester }}
+	\item ...
+	\item Benutzte Techniken: {{ work.details.used_technologies }}
+	\end{itemize}
+}
+{% endfor %}
+
+\section{IT--Kenntnisse}
+\eintragK{}{\begin{tabu} to \maincolumnwidth {p{\tabBreite}@{\hspace{\tabSpace}}X{l}}
+	{\mdseries Betriebssysteme}: & {{ it_skills.operating_systems }} \\
+	{\mdseries Office}: & {{ it_skills.office_skills }} \\
+	{\mdseries ...}: & {{ it_skills.other_skills }} \\
+\end{tabu}
+}
+
+\section{Fremdsprachen}
+\eintragK{}{\begin{tabu} to \maincolumnwidth {p{\tabBreite}@{\hspace{\tabSpace}}X{l}}
+	{\mdseries Englisch}: & {{ languages.english }} \\
+\end{tabu}
+}
+
+\vspace{3\baselineskip}
+%\vfill
+\unterschriftLL
